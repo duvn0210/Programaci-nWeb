@@ -1,5 +1,5 @@
 import React from 'react'
-import TemplateLogin from '../modules/Login/TemplateLogin'
+import TemplateLogin from '../modules/Login/TemplateLogin';
 
 
 const Login = () => {
