@@ -17,7 +17,6 @@ const ButtonsLogin = ({ buttonLogin, email, password }) => {
       <button
         className='h-[50px] w-[170px] bg-[#3B2A54FF] rounded-3xl text-xl text-white'
         onClick={handleLoginClick}
-        disabled={!email || !password}
       >
         {buttonLogin}
       </button>
