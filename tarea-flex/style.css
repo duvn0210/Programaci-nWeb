@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .header div {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .uno {
+    background-color: #20c997;
+  }
+  .dos {
+    background-color: #0d6efd;
+    flex-basis: 10%;
+  }
+  .tres {
+    background-color: #6f42c1;
+  }
+  .cuatro {
+    background-color: #343a40;
+  }
+  .cinco {
+    background-color: #ffc107;
+    flex-basis: 15%;
+  }
+  .seis {
+    background-color: #fd7e14;
+  }
+  
+  .container {
+    display: flex;
+    border: 4px solid red;
+    height: 400px;
+  }
+  
+  .container > div {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .col__left,
+  .col__right {
+    flex-direction: column;
+    flex: 0 0 50%;
+  }
+  
+  .container .uno {
+    flex: 0 0 27%;
+    background-color: #20c997;
+  }
+  
+  .container .dos {
+    flex: 0 0 27%;
+    background-color: #0d6efd;
+  }
+  
+  .container .tres {
+    flex: 0 0 35%;
+    background-color: #6f42c1;
+  }
+  
+  .container .cuatro {
+    flex: 0 0 11%;
+    background-color: #343a40;
+  }
+  
+  .container .cinco {
+    flex: 0 0 50%;
+    background-color: #ffc107;
+  }
+  
+  .container .seis {
+    flex: 0 0 50%;
+    background-color: #fd7e14;
+  }
+  
+  
