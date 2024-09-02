@@ -28,6 +28,15 @@ const ButtonsLogin = ({ buttonLogin, username, password }) => {
                   navigate("/graficas");
               });
               }
+              else if (resp.status == 404) {
+                Swal.fire({
+                  title:'Error',
+                  text:'El usuario no ha sido encontrado, por favor verifica tus credenciales',
+                  icon:'question',
+                  confirmButtonText:'Entendido'
+                })
+
+              }
           })
           .catch((err) => {
             console.log(err);
