@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import ButtonsLogin from "./components/ButtonsLogin";
+import Mundo from '../../assets/Images/mundo.svg';
+import Avion from  '../../assets/Images/avion.png';
 
 const TemplateLogin = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
 
   return (
     <div className="flex items-center flex-col">
       <div className="bg-[#3B2A54FF] w-full h-[300px] rounded-b-[70px] flex items-center flex-col">
-        <img className="mt-[-25px]" src="/Images/mundo.svg" alt="mundo" />
-        <img className="w-[220px] h-[280px] mt-[-80px] shadow-bottom" src="/Images/avion.png" alt="avion" />
+        <img className="mt-[-25px]" src={Mundo} alt="mundo" />
+        <img className="w-[220px] h-[280px] mt-[-80px] shadow-bottom" src={Avion} alt="avion" />
       </div>
       <div className="flex justify-center items-center flex-col pt-[80px]">
         <div className="flex flex-row pt-6 pb-4">
@@ -21,13 +20,13 @@ const TemplateLogin = () => {
           <p className="text-[40px] text-[#3B2A54FF]">App</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex items-center flex-col">
+        <form className="flex items-center flex-col">
           <input
             type="email"
-            placeholder="Correo electronico"
+            placeholder="Usuario"
             className="w-80 h-10 bg-[#DDDBF1] text-xl text-center mb-3 rounded-3xl"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
           <input
             type="password"
@@ -36,7 +35,7 @@ const TemplateLogin = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <ButtonsLogin buttonLogin="Log in" email={email} password={password} />
+          <ButtonsLogin buttonLogin="Log in" username={username} password={password} />
         </form>
       </div>
     </div>

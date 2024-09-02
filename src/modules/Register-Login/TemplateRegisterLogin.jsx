@@ -1,12 +1,14 @@
 import React from "react";
 import ButtonsRegisterLogin from "./components/ButtonsRegisterLogin";
+import Mundo from '../../assets/Images/mundo.svg';
+import Avion from  '../../assets/Images/avion.png';
 
 const TemplateRegisterLogin = () => {
   return (
     <div className="flex items-center flex-col">
         <div className="bg-[#3B2A54FF] w-full h-[300px] rounded-b-[70px] flex items-center flex-col">
-        <img className="mt-[-25px]" src="/Images/mundo.svg" alt="mundo" />
-        <img className="w-[220px] h-[280px] mt-[-80px] shadow-bottom" src="/Images/avion.png" alt="avion" />
+        <img className="mt-[-25px]" src={Mundo} alt="mundo" />
+        <img className="w-[220px] h-[280px] mt-[-80px] shadow-bottom" src={Avion} alt="avion" />
         </div>
         <div className="flex justify-center items-center flex-col pt-[80px]">
             <div className="flex flex-row pt-6 pb-8">
